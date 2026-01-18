@@ -1,4 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <!-- Primary Colors -->
+    <color name="primary">#1E88E5</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="primary_light">#42A5F5</color>
+    <color name="accent">#00BCD4</color>
+    
+    <!-- Background Colors -->
+    <color name="background_dark">#121212</color>
+    <color name="background_card">#1E1E1E</color>
+    <color name="surface">#242424</color>
+    <color name="surface_light">#2C2C2C</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_disabled">#666666</color>
+    <color name="text_hint">#808080</color>
+    
+    <!-- Status Colors -->
+    <color name="status_connected">#4CAF50</color>
+    <color name="status_disconnected">#9E9E9E</color>
+    <color name="status_connecting">#FFC107</color>
+    <color name="status_error">#F44336</color>
+    
+    <!-- Connection Button Colors -->
+    <color name="button_connect_start">#1E88E5</color>
+    <color name="button_connect_end">#00BCD4</color>
+    <color name="button_disconnect_start">#F44336</color>
+    <color name="button_disconnect_end">#E91E63</color>
+    <color name="button_connecting_start">#FFC107</color>
+    <color name="button_connecting_end">#FF9800</color>
+    
+    <!-- Latency Colors -->
+    <color name="latency_excellent">#4CAF50</color>
+    <color name="latency_good">#8BC34A</color>
+    <color name="latency_medium">#FFC107</color>
+    <color name="latency_poor">#FF9800</color>
+    <color name="latency_bad">#F44336</color>
+    
+    <!-- Protocol Badge Colors -->
+    <color name="protocol_vmess">#9C27B0</color>
+    <color name="protocol_vless">#673AB7</color>
+    <color name="protocol_trojan">#3F51B5</color>
+    <color name="protocol_shadowsocks">#2196F3</color>
+    <color name="protocol_ssh">#00BCD4</color>
+    
+    <!-- Traffic Stats Colors -->
+    <color name="traffic_download">#4CAF50</color>
+    <color name="traffic_upload">#2196F3</color>
+    
+    <!-- Divider and Border -->
+    <color name="divider">#333333</color>
+    <color name="border">#404040</color>
+    
+    <!-- Ripple and Overlay -->
+    <color name="ripple_light">#33FFFFFF</color>
+    <color name="ripple_dark">#33000000</color>
+    <color name="overlay_dark">#80000000</color>
+    
+    <!-- Drawer Colors -->
+    <color name="drawer_background">#1A1A1A</color>
+    <color name="drawer_item_selected">#1E88E5</color>
+    <color name="drawer_item_text">#FFFFFF</color>
+    <color name="drawer_item_icon">#B3B3B3</color>
+    
+    <!-- Dialog Colors -->
+    <color name="dialog_background">#2C2C2C</color>
+    <color name="dialog_title">#FFFFFF</color>
+    
+    <!-- Input Colors -->
+    <color name="input_background">#1E1E1E</color>
+    <color name="input_stroke">#404040</color>
+    <color name="input_stroke_focused">#1E88E5</color>
+    
+    <!-- Chip/Badge Colors -->
+    <color name="chip_background">#333333</color>
+    <color name="chip_text">#FFFFFF</color>
+    
+    <!-- Warning and Info -->
+    <color name="warning">#FF9800</color>
+    <color name="info">#2196F3</color>
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    
+    <!-- White and Black -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
 </resources>

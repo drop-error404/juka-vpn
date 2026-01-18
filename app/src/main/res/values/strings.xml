@@ -1,3 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- App Name -->
     <string name="app_name">JUKA VPN</string>
+    <string name="app_version">v1.0.0</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Início</string>
+    <string name="nav_servers">Servidores</string>
+    <string name="nav_speed_test">Teste de Velocidade</string>
+    <string name="nav_ping_test">Teste de Ping</string>
+    <string name="nav_import">Importar</string>
+    <string name="nav_export">Exportar</string>
+    <string name="nav_subscription">Subscrição</string>
+    <string name="nav_logs">Logs</string>
+    <string name="nav_settings">Configurações</string>
+    <string name="nav_about">Sobre</string>
+    
+    <!-- Connection Status -->
+    <string name="status_disconnected">Desconectado</string>
+    <string name="status_connecting">Conectando…</string>
+    <string name="status_connected">Conectado</string>
+    <string name="status_disconnecting">Desconectando…</string>
+    <string name="status_error">Erro de Conexão</string>
+    <string name="status_no_network">Sem Rede</string>
+    
+    <!-- Connection Button -->
+    <string name="btn_connect">Conectar</string>
+    <string name="btn_disconnect">Desconectar</string>
+    <string name="btn_connecting">Conectando…</string>
+    <string name="btn_tap_to_connect">Toque para Conectar</string>
+    <string name="btn_tap_to_disconnect">Toque para Desconectar</string>
+    
+    <!-- Server Selection -->
+    <string name="current_server">Servidor Atual</string>
+    <string name="select_server">Selecionar Servidor</string>
+    <string name="no_server_selected">Nenhum servidor selecionado</string>
+    <string name="tap_to_select_server">Toque para selecionar</string>
+    <string name="server_list">Lista de Servidores</string>
+    <string name="all_servers">Todos os Servidores</string>
+    <string name="favorite_servers">Favoritos</string>
+    <string name="recent_servers">Recentes</string>
+    
+    <!-- Traffic Stats -->
+    <string name="traffic_stats">Estatísticas de Tráfego</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="download_speed">Velocidade de Download</string>
+    <string name="upload_speed">Velocidade de Upload</string>
+    <string name="total_downloaded">Total Baixado</string>
+    <string name="total_uploaded">Total Enviado</string>
+    <string name="session_time">Tempo de Sessão</string>
+    <string name="speed_format">%s/s</string>
+    <string name="data_format_bytes">%d B</string>
+    <string name="data_format_kb">%.1f KB</string>
+    <string name="data_format_mb">%.1f MB</string>
+    <string name="data_format_gb">%.2f GB</string>
+    
+    <!-- Server Info -->
+    <string name="server_name">Nome do Servidor</string>
+    <string name="server_address">Endereço</string>
+    <string name="server_port">Porta</string>
+    <string name="server_protocol">Protocolo</string>
+    <string name="server_country">País</string>
+    <string name="server_latency">Latência</string>
+    <string name="server_latency_ms">%d ms</string>
+    <string name="server_latency_testing">Testando…</string>
+    <string name="server_latency_timeout">Timeout</string>
+    <string name="server_latency_error">Erro</string>
+    
+    <!-- Protocols -->
+    <string name="protocol_vmess">VMess</string>
+    <string name="protocol_vless">VLESS</string>
+    <string name="protocol_trojan">Trojan</string>
+    <string name="protocol_shadowsocks">Shadowsocks</string>
+    <string name="protocol_ssh">SSH</string>
+    <string name="protocol_unknown">Desconhecido</string>
+    
+    <!-- Import/Export -->
+    <string name="import_title">Importar Configuração</string>
+    <string name="import_from_clipboard">Da Área de Transferência</string>
+    <string name="import_from_qr">Do QR Code</string>
+    <string name="import_from_file">De Arquivo</string>
+    <string name="import_success">Importado com sucesso!</string>
+    <string name="import_failed">Falha ao importar</string>
+    <string name="import_invalid_format">Formato inválido</string>
+    <string name="export_title">Exportar Configuração</string>
+    <string name="export_to_clipboard">Para Área de Transferência</string>
+    <string name="export_to_qr">Para QR Code</string>
+    <string name="export_to_file">Para Arquivo</string>
+    <string name="export_success">Exportado com sucesso!</string>
+    <string name="export_failed">Falha ao exportar</string>
+    
+    <!-- Subscription -->
+    <string name="subscription_title">Subscrição</string>
+    <string name="subscription_url">URL da Subscrição</string>
+    <string name="subscription_url_hint">Cole a URL da subscrição aqui</string>
+    <string name="subscription_add">Adicionar Subscrição</string>
+    <string name="subscription_update">Atualizar</string>
+    <string name="subscription_update_all">Atualizar Todas</string>
+    <string name="subscription_delete">Remover Subscrição</string>
+    <string name="subscription_last_update">Última atualização: %s</string>
+    <string name="subscription_servers_count">%d servidores</string>
+    <string name="subscription_updating">Atualizando…</string>
+    <string name="subscription_update_success">Atualizado com sucesso!</string>
+    <string name="subscription_update_failed">Falha ao atualizar</string>
+    
+    <!-- Add Server Dialog -->
+    <string name="add_server">Adicionar Servidor</string>
+    <string name="edit_server">Editar Servidor</string>
+    <string name="delete_server">Eliminar Servidor</string>
+    <string name="server_config">Configuração do Servidor</string>
+    <string name="server_config_hint">Cole a configuração (vmess://, vless://, etc.)</string>
+    <string name="server_remark">Apelido (opcional)</string>
+    <string name="server_remark_hint">Nome do servidor</string>
+    
+    <!-- Actions -->
+    <string name="action_save">Guardar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_copy">Copiar</string>
+    <string name="action_share">Partilhar</string>
+    <string name="action_test">Testar</string>
+    <string name="action_test_all">Testar Todos</string>
+    <string name="action_refresh">Atualizar</string>
+    <string name="action_search">Pesquisar</string>
+    <string name="action_filter">Filtrar</string>
+    <string name="action_sort">Ordenar</string>
+    <string name="action_select_all">Selecionar Todos</string>
+    <string name="action_clear">Limpar</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Sim</string>
+    <string name="action_no">Não</string>
+    
+    <!-- Empty States -->
+    <string name="empty_servers">Nenhum servidor adicionado</string>
+    <string name="empty_servers_hint">Adicione servidores usando o botão +</string>
+    <string name="empty_logs">Nenhum log disponível</string>
+    <string name="empty_subscriptions">Nenhuma subscrição</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_vpn">Conexão VPN</string>
+    <string name="notification_channel_vpn_desc">Notificações sobre o estado da VPN</string>
+    <string name="notification_connected">VPN Conectada</string>
+    <string name="notification_connected_to">Conectado a %s</string>
+    <string name="notification_disconnected">VPN Desconectada</string>
+    <string name="notification_connecting">Conectando…</string>
+    <string name="notification_tap_to_open">Toque para abrir</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">Configurações</string>
+    <string name="settings_general">Geral</string>
+    <string name="settings_connection">Conexão</string>
+    <string name="settings_auto_connect">Conectar automaticamente</string>
+    <string name="settings_auto_connect_desc">Conectar ao iniciar o app</string>
+    <string name="settings_reconnect">Reconectar automaticamente</string>
+    <string name="settings_reconnect_desc">Reconectar quando a conexão cair</string>
+    <string name="settings_kill_switch">Kill Switch</string>
+    <string name="settings_kill_switch_desc">Bloquear internet sem VPN</string>
+    <string name="settings_split_tunneling">Split Tunneling</string>
+    <string name="settings_split_tunneling_desc">Escolher apps para usar VPN</string>
+    <string name="settings_dns">DNS Personalizado</string>
+    <string name="settings_dns_desc">Usar servidores DNS específicos</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_theme_light">Claro</string>
+    <string name="settings_theme_dark">Escuro</string>
+    <string name="settings_theme_system">Sistema</string>
+    <string name="settings_language">Idioma</string>
+    
+    <!-- About -->
+    <string name="about_title">Sobre</string>
+    <string name="about_version">Versão %s</string>
+    <string name="about_developer">Desenvolvido por JuLogic</string>
+    <string name="about_description">JUKA VPN é uma aplicação de tunelamento VPN que suporta múltiplos protocolos incluindo VMess, VLESS, Trojan, Shadowsocks e SSH.</string>
+    <string name="about_github">GitHub</string>
+    <string name="about_telegram">Telegram</string>
+    <string name="about_email">Email</string>
+    <string name="about_rate">Avaliar App</string>
+    <string name="about_share">Partilhar App</string>
+    <string name="about_licenses">Licenças</string>
+    <string name="about_privacy">Política de Privacidade</string>
+    
+    <!-- Errors -->
+    <string name="error_no_internet">Sem conexão à internet</string>
+    <string name="error_connection_failed">Falha na conexão</string>
+    <string name="error_server_unreachable">Servidor inacessível</string>
+    <string name="error_invalid_config">Configuração inválida</string>
+    <string name="error_permission_denied">Permissão negada</string>
+    <string name="error_vpn_permission">Permissão VPN necessária</string>
+    <string name="error_unknown">Erro desconhecido</string>
+    
+    <!-- Confirmation Dialogs -->
+    <string name="confirm_delete_server">Tem certeza que deseja eliminar este servidor?</string>
+    <string name="confirm_delete_subscription">Tem certeza que deseja remover esta subscrição?</string>
+    <string name="confirm_clear_logs">Tem certeza que deseja limpar todos os logs?</string>
+    <string name="confirm_disconnect">Deseja desconectar da VPN?</string>
+    
+    <!-- Time Formats -->
+    <string name="time_now">Agora</string>
+    <string name="time_seconds">%d seg</string>
+    <string name="time_minutes">%d min</string>
+    <string name="time_hours">%d h</string>
+    <string name="time_format">%02d:%02d:%02d</string>
+    
+    <!-- Countries -->
+    <string name="country_unknown">Desconhecido</string>
+    <string name="country_auto">Auto (Melhor)</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Pesquisar servidores…</string>
+    <string name="search_no_results">Nenhum resultado encontrado</string>
+    
+    <!-- Quick Tile -->
+    <string name="tile_label">JUKA VPN</string>
+    <string name="tile_subtitle_off">Desligado</string>
+    <string name="tile_subtitle_on">Ligado</string>
+    
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_menu">Abrir menu</string>
+    <string name="cd_back">Voltar</string>
+    <string name="cd_close">Fechar</string>
+    <string name="cd_search">Pesquisar</string>
+    <string name="cd_add_server">Adicionar servidor</string>
+    <string name="cd_server_options">Opções do servidor</string>
+    <string name="cd_connection_button">Botão de conexão</string>
+    <string name="cd_server_flag">Bandeira do país</string>
+    <string name="cd_latency_indicator">Indicador de latência</string>
 </resources>
