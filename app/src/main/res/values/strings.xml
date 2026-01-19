@@ -3,6 +3,7 @@
     <!-- App Name -->
     <string name="app_name">JUKA VPN</string>
     <string name="app_version">v1.0.0</string>
+    <string name="app_description">VPN segura com múltiplos protocolos</string>
     
     <!-- Navigation -->
     <string name="nav_home">Início</string>
@@ -23,6 +24,7 @@
     <string name="status_disconnecting">Desconectando…</string>
     <string name="status_error">Erro de Conexão</string>
     <string name="status_no_network">Sem Rede</string>
+    <string name="status_reconnecting">Reconectando…</string>
     
     <!-- Connection Button -->
     <string name="btn_connect">Conectar</string>
@@ -30,6 +32,8 @@
     <string name="btn_connecting">Conectando…</string>
     <string name="btn_tap_to_connect">Toque para Conectar</string>
     <string name="btn_tap_to_disconnect">Toque para Desconectar</string>
+    <string name="btn_quick_connect">Conexão Rápida</string>
+    <string name="btn_reconnect">Reconectar</string>
     
     <!-- Server Selection -->
     <string name="current_server">Servidor Atual</string>
@@ -40,6 +44,8 @@
     <string name="all_servers">Todos os Servidores</string>
     <string name="favorite_servers">Favoritos</string>
     <string name="recent_servers">Recentes</string>
+    <string name="servers_count">%d servidores</string>
+    <string name="server_selected">Selecionado</string>
     
     <!-- Traffic Stats -->
     <string name="traffic_stats">Estatísticas de Tráfego</string>
@@ -67,6 +73,11 @@
     <string name="server_latency_testing">Testando…</string>
     <string name="server_latency_timeout">Timeout</string>
     <string name="server_latency_error">Erro</string>
+    <string name="server_latency_unknown">—</string>
+    <string name="server_latency_excellent">Excelente</string>
+    <string name="server_latency_good">Bom</string>
+    <string name="server_latency_fair">Razoável</string>
+    <string name="server_latency_slow">Lento</string>
     
     <!-- Protocols -->
     <string name="protocol_vmess">VMess</string>
@@ -74,27 +85,40 @@
     <string name="protocol_trojan">Trojan</string>
     <string name="protocol_shadowsocks">Shadowsocks</string>
     <string name="protocol_ssh">SSH</string>
+    <string name="protocol_udp">UDP</string>
     <string name="protocol_unknown">Desconhecido</string>
+    
+    <!-- Protocol Details -->
+    <string name="protocol_network">Rede: %s</string>
+    <string name="protocol_security">Segurança: %s</string>
+    <string name="protocol_tls">TLS: %s</string>
+    <string name="protocol_encryption">Encriptação: %s</string>
     
     <!-- Import/Export -->
     <string name="import_title">Importar Configuração</string>
     <string name="import_from_clipboard">Da Área de Transferência</string>
     <string name="import_from_qr">Do QR Code</string>
     <string name="import_from_file">De Arquivo</string>
+    <string name="import_from_url">De URL</string>
     <string name="import_success">Importado com sucesso!</string>
+    <string name="import_success_count">%d servidor(es) importado(s)</string>
     <string name="import_failed">Falha ao importar</string>
     <string name="import_invalid_format">Formato inválido</string>
+    <string name="import_paste_hint">Cole a configuração aqui…</string>
     <string name="export_title">Exportar Configuração</string>
     <string name="export_to_clipboard">Para Área de Transferência</string>
     <string name="export_to_qr">Para QR Code</string>
     <string name="export_to_file">Para Arquivo</string>
     <string name="export_success">Exportado com sucesso!</string>
     <string name="export_failed">Falha ao exportar</string>
+    <string name="export_copied">Copiado para área de transferência</string>
     
     <!-- Subscription -->
     <string name="subscription_title">Subscrição</string>
     <string name="subscription_url">URL da Subscrição</string>
     <string name="subscription_url_hint">Cole a URL da subscrição aqui</string>
+    <string name="subscription_name">Nome da Subscrição</string>
+    <string name="subscription_name_hint">Nome (opcional)</string>
     <string name="subscription_add">Adicionar Subscrição</string>
     <string name="subscription_update">Atualizar</string>
     <string name="subscription_update_all">Atualizar Todas</string>
@@ -104,6 +128,8 @@
     <string name="subscription_updating">Atualizando…</string>
     <string name="subscription_update_success">Atualizado com sucesso!</string>
     <string name="subscription_update_failed">Falha ao atualizar</string>
+    <string name="subscription_auto_update">Atualização automática</string>
+    <string name="subscription_auto_update_desc">Atualizar ao iniciar o app</string>
     
     <!-- Add Server Dialog -->
     <string name="add_server">Adicionar Servidor</string>
@@ -113,6 +139,7 @@
     <string name="server_config_hint">Cole a configuração (vmess://, vless://, etc.)</string>
     <string name="server_remark">Apelido (opcional)</string>
     <string name="server_remark_hint">Nome do servidor</string>
+    <string name="server_manual_config">Configuração Manual</string>
     
     <!-- Actions -->
     <string name="action_save">Guardar</string>
@@ -123,6 +150,7 @@
     <string name="action_share">Partilhar</string>
     <string name="action_test">Testar</string>
     <string name="action_test_all">Testar Todos</string>
+    <string name="action_test_latency">Testar Latência</string>
     <string name="action_refresh">Atualizar</string>
     <string name="action_search">Pesquisar</string>
     <string name="action_filter">Filtrar</string>
@@ -132,12 +160,35 @@
     <string name="action_ok">OK</string>
     <string name="action_yes">Sim</string>
     <string name="action_no">Não</string>
+    <string name="action_done">Concluído</string>
+    <string name="action_apply">Aplicar</string>
+    <string name="action_reset">Redefinir</string>
+    
+    <!-- Sort Options -->
+    <string name="sort_by_name">Por Nome</string>
+    <string name="sort_by_latency">Por Latência</string>
+    <string name="sort_by_country">Por País</string>
+    <string name="sort_by_protocol">Por Protocolo</string>
+    <string name="sort_by_recent">Por Recente</string>
+    <string name="sort_ascending">Crescente</string>
+    <string name="sort_descending">Decrescente</string>
+    
+    <!-- Filter Options -->
+    <string name="filter_by_country">Filtrar por País</string>
+    <string name="filter_by_protocol">Filtrar por Protocolo</string>
+    <string name="filter_favorites_only">Apenas Favoritos</string>
+    <string name="filter_clear">Limpar Filtros</string>
+    <string name="filter_all_countries">Todos os Países</string>
+    <string name="filter_all_protocols">Todos os Protocolos</string>
     
     <!-- Empty States -->
     <string name="empty_servers">Nenhum servidor adicionado</string>
     <string name="empty_servers_hint">Adicione servidores usando o botão +</string>
     <string name="empty_logs">Nenhum log disponível</string>
     <string name="empty_subscriptions">Nenhuma subscrição</string>
+    <string name="empty_search">Nenhum resultado encontrado</string>
+    <string name="empty_favorites">Nenhum favorito</string>
+    <string name="empty_favorites_hint">Marque servidores como favorito</string>
     
     <!-- Notifications -->
     <string name="notification_channel_vpn">Conexão VPN</string>
@@ -147,61 +198,156 @@
     <string name="notification_disconnected">VPN Desconectada</string>
     <string name="notification_connecting">Conectando…</string>
     <string name="notification_tap_to_open">Toque para abrir</string>
+    <string name="notification_stats">↓ %s  ↑ %s</string>
     
     <!-- Settings -->
     <string name="settings_title">Configurações</string>
     <string name="settings_general">Geral</string>
     <string name="settings_connection">Conexão</string>
+    <string name="settings_advanced">Avançado</string>
+    
+    <!-- Settings - Auto Connect -->
     <string name="settings_auto_connect">Conectar automaticamente</string>
     <string name="settings_auto_connect_desc">Conectar ao iniciar o app</string>
+    
+    <!-- Settings - Reconnect -->
     <string name="settings_reconnect">Reconectar automaticamente</string>
     <string name="settings_reconnect_desc">Reconectar quando a conexão cair</string>
+    
+    <!-- Settings - Kill Switch -->
     <string name="settings_kill_switch">Kill Switch</string>
     <string name="settings_kill_switch_desc">Bloquear internet sem VPN</string>
+    
+    <!-- Settings - Split Tunneling -->
     <string name="settings_split_tunneling">Split Tunneling</string>
     <string name="settings_split_tunneling_desc">Escolher apps para usar VPN</string>
+    <string name="settings_bypass_mode">Modo de Bypass</string>
+    <string name="settings_bypass_mode_desc">Apps selecionados NÃO usam VPN</string>
+    <string name="settings_proxy_mode">Modo Proxy</string>
+    <string name="settings_proxy_mode_desc">Apenas apps selecionados usam VPN</string>
+    <string name="settings_select_apps">Selecionar Apps</string>
+    <string name="settings_apps_selected">%d app(s) selecionado(s)</string>
+    <string name="settings_apps_none">Nenhum app selecionado</string>
+    <string name="settings_show_system_apps">Mostrar apps do sistema</string>
+    
+    <!-- Settings - DNS -->
     <string name="settings_dns">DNS Personalizado</string>
     <string name="settings_dns_desc">Usar servidores DNS específicos</string>
+    <string name="settings_dns_primary">DNS Primário</string>
+    <string name="settings_dns_secondary">DNS Secundário</string>
+    <string name="settings_dns_hint">Ex: 8.8.8.8</string>
+    <string name="settings_dns_preset">DNS Predefinido</string>
+    <string name="settings_dns_google">Google DNS</string>
+    <string name="settings_dns_cloudflare">Cloudflare DNS</string>
+    <string name="settings_dns_quad9">Quad9 DNS</string>
+    <string name="settings_dns_opendns">OpenDNS</string>
+    <string name="settings_dns_adguard">AdGuard DNS</string>
+    <string name="settings_dns_custom">Personalizado</string>
+    
+    <!-- Settings - Network -->
+    <string name="settings_bypass_lan">Bypass LAN</string>
+    <string name="settings_bypass_lan_desc">Permitir acesso à rede local</string>
+    <string name="settings_ipv6">Suporte IPv6</string>
+    <string name="settings_ipv6_desc">Ativar roteamento IPv6</string>
+    <string name="settings_mtu">MTU</string>
+    <string name="settings_mtu_desc">Tamanho máximo do pacote</string>
+    
+    <!-- Settings - Protocol -->
+    <string name="settings_protocol">Protocolo</string>
+    <string name="settings_protocol_desc">Configurações específicas do protocolo</string>
+    <string name="settings_mux">Multiplexing (Mux)</string>
+    <string name="settings_mux_desc">Multiplexar conexões</string>
+    <string name="settings_mux_concurrency">Concorrência Mux</string>
+    
+    <!-- Settings - Appearance -->
+    <string name="settings_appearance">Aparência</string>
     <string name="settings_theme">Tema</string>
     <string name="settings_theme_light">Claro</string>
     <string name="settings_theme_dark">Escuro</string>
     <string name="settings_theme_system">Sistema</string>
     <string name="settings_language">Idioma</string>
+    <string name="settings_language_system">Sistema</string>
+    
+    <!-- Settings - Other -->
+    <string name="settings_start_on_boot">Iniciar com o sistema</string>
+    <string name="settings_start_on_boot_desc">Conectar ao ligar o dispositivo</string>
+    <string name="settings_notifications">Notificações</string>
+    <string name="settings_notifications_desc">Mostrar notificação de conexão</string>
+    <string name="settings_haptic">Vibração</string>
+    <string name="settings_haptic_desc">Vibrar ao conectar/desconectar</string>
+    
+    <!-- Settings - Data -->
+    <string name="settings_data">Dados</string>
+    <string name="settings_clear_stats">Limpar Estatísticas</string>
+    <string name="settings_clear_stats_desc">Apagar histórico de tráfego</string>
+    <string name="settings_clear_servers">Limpar Servidores</string>
+    <string name="settings_clear_servers_desc">Remover todos os servidores</string>
+    <string name="settings_export_settings">Exportar Configurações</string>
+    <string name="settings_import_settings">Importar Configurações</string>
+    <string name="settings_reset">Redefinir Configurações</string>
+    <string name="settings_reset_desc">Restaurar configurações padrão</string>
     
     <!-- About -->
     <string name="about_title">Sobre</string>
     <string name="about_version">Versão %s</string>
     <string name="about_developer">Desenvolvido por JuLogic</string>
     <string name="about_description">JUKA VPN é uma aplicação de tunelamento VPN que suporta múltiplos protocolos incluindo VMess, VLESS, Trojan, Shadowsocks e SSH.</string>
+    <string name="about_features">Características</string>
+    <string name="about_feature_1">• Múltiplos protocolos: VMess, VLESS, Trojan, SS</string>
+    <string name="about_feature_2">• Suporte a subscriptions</string>
+    <string name="about_feature_3">• Kill Switch e Split Tunneling</string>
+    <string name="about_feature_4">• DNS personalizado</string>
+    <string name="about_feature_5">• Importação via QR Code</string>
     <string name="about_github">GitHub</string>
     <string name="about_telegram">Telegram</string>
     <string name="about_email">Email</string>
+    <string name="about_website">Website</string>
     <string name="about_rate">Avaliar App</string>
     <string name="about_share">Partilhar App</string>
-    <string name="about_licenses">Licenças</string>
+    <string name="about_licenses">Licenças Open Source</string>
     <string name="about_privacy">Política de Privacidade</string>
+    <string name="about_terms">Termos de Uso</string>
+    <string name="about_changelog">Novidades</string>
+    <string name="about_check_update">Verificar Atualizações</string>
     
     <!-- Errors -->
     <string name="error_no_internet">Sem conexão à internet</string>
     <string name="error_connection_failed">Falha na conexão</string>
+    <string name="error_connection_timeout">Timeout de conexão</string>
     <string name="error_server_unreachable">Servidor inacessível</string>
     <string name="error_invalid_config">Configuração inválida</string>
+    <string name="error_invalid_server">Servidor inválido</string>
     <string name="error_permission_denied">Permissão negada</string>
     <string name="error_vpn_permission">Permissão VPN necessária</string>
+    <string name="error_vpn_service">Erro no serviço VPN</string>
+    <string name="error_parse_failed">Falha ao analisar configuração</string>
+    <string name="error_subscription_failed">Falha ao atualizar subscrição</string>
+    <string name="error_no_servers">Nenhum servidor disponível</string>
     <string name="error_unknown">Erro desconhecido</string>
+    <string name="error_network_change">Mudança de rede detectada</string>
     
     <!-- Confirmation Dialogs -->
     <string name="confirm_delete_server">Tem certeza que deseja eliminar este servidor?</string>
+    <string name="confirm_delete_servers">Tem certeza que deseja eliminar %d servidores?</string>
     <string name="confirm_delete_subscription">Tem certeza que deseja remover esta subscrição?</string>
     <string name="confirm_clear_logs">Tem certeza que deseja limpar todos os logs?</string>
+    <string name="confirm_clear_servers">Tem certeza que deseja remover todos os servidores?</string>
+    <string name="confirm_clear_stats">Tem certeza que deseja limpar as estatísticas?</string>
+    <string name="confirm_reset_settings">Tem certeza que deseja redefinir as configurações?</string>
     <string name="confirm_disconnect">Deseja desconectar da VPN?</string>
+    <string name="confirm_exit">Deseja sair? A VPN será desconectada.</string>
     
     <!-- Time Formats -->
     <string name="time_now">Agora</string>
     <string name="time_seconds">%d seg</string>
     <string name="time_minutes">%d min</string>
     <string name="time_hours">%d h</string>
+    <string name="time_days">%d d</string>
     <string name="time_format">%02d:%02d:%02d</string>
+    <string name="time_just_now">Agora mesmo</string>
+    <string name="time_minutes_ago">%d min atrás</string>
+    <string name="time_hours_ago">%d h atrás</string>
+    <string name="time_days_ago">%d d atrás</string>
     
     <!-- Countries -->
     <string name="country_unknown">Desconhecido</string>
@@ -210,11 +356,42 @@
     <!-- Search -->
     <string name="search_hint">Pesquisar servidores…</string>
     <string name="search_no_results">Nenhum resultado encontrado</string>
+    <string name="search_results">%d resultado(s)</string>
     
     <!-- Quick Tile -->
     <string name="tile_label">JUKA VPN</string>
     <string name="tile_subtitle_off">Desligado</string>
     <string name="tile_subtitle_on">Ligado</string>
+    <string name="tile_subtitle_connecting">Conectando…</string>
+    
+    <!-- Logs -->
+    <string name="logs_title">Logs</string>
+    <string name="logs_clear">Limpar Logs</string>
+    <string name="logs_copy">Copiar Logs</string>
+    <string name="logs_share">Partilhar Logs</string>
+    <string name="logs_level">Nível de Log</string>
+    <string name="logs_level_debug">Debug</string>
+    <string name="logs_level_info">Info</string>
+    <string name="logs_level_warning">Aviso</string>
+    <string name="logs_level_error">Erro</string>
+    
+    <!-- Speed Test -->
+    <string name="speed_test_title">Teste de Velocidade</string>
+    <string name="speed_test_start">Iniciar Teste</string>
+    <string name="speed_test_stop">Parar Teste</string>
+    <string name="speed_test_download">Download</string>
+    <string name="speed_test_upload">Upload</string>
+    <string name="speed_test_ping">Ping</string>
+    <string name="speed_test_jitter">Jitter</string>
+    <string name="speed_test_running">Testando…</string>
+    <string name="speed_test_complete">Teste Concluído</string>
+    
+    <!-- QR Code -->
+    <string name="qr_scan_title">Escanear QR Code</string>
+    <string name="qr_scan_hint">Aponte a câmera para o QR Code</string>
+    <string name="qr_permission_required">Permissão de câmera necessária</string>
+    <string name="qr_invalid">QR Code inválido</string>
+    <string name="qr_generate_title">Gerar QR Code</string>
     
     <!-- Content Descriptions (Accessibility) -->
     <string name="cd_menu">Abrir menu</string>
@@ -226,4 +403,30 @@
     <string name="cd_connection_button">Botão de conexão</string>
     <string name="cd_server_flag">Bandeira do país</string>
     <string name="cd_latency_indicator">Indicador de latência</string>
+    <string name="cd_favorite">Favorito</string>
+    <string name="cd_settings">Configurações</string>
+    <string name="cd_refresh">Atualizar</string>
+    <string name="cd_sort">Ordenar</string>
+    <string name="cd_filter">Filtrar</string>
+    <string name="cd_scan_qr">Escanear QR Code</string>
+    <string name="cd_share">Partilhar</string>
+    <string name="cd_copy">Copiar</string>
+    <string name="cd_delete">Eliminar</string>
+    <string name="cd_edit">Editar</string>
+    
+    <!-- Plurals -->
+    <plurals name="servers_count">
+        <item quantity="one">%d servidor</item>
+        <item quantity="other">%d servidores</item>
+    </plurals>
+    
+    <plurals name="apps_selected">
+        <item quantity="one">%d app selecionado</item>
+        <item quantity="other">%d apps selecionados</item>
+    </plurals>
+    
+    <plurals name="minutes_ago">
+        <item quantity="one">%d minuto atrás</item>
+        <item quantity="other">%d minutos atrás</item>
+    </plurals>
 </resources>
