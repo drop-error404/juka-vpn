@@ -5,39 +5,75 @@
     <color name="primary_dark">#1565C0</color>
     <color name="primary_light">#42A5F5</color>
     <color name="accent">#00BCD4</color>
+    <color name="on_primary">#FFFFFF</color>
+    
+    <!-- Secondary Colors -->
+    <color name="secondary">#00BCD4</color>
+    <color name="secondary_dark">#0097A7</color>
+    <color name="on_secondary">#FFFFFF</color>
     
     <!-- Background Colors -->
+    <color name="background">#FAFAFA</color>
     <color name="background_dark">#121212</color>
     <color name="background_card">#1E1E1E</color>
-    <color name="surface">#242424</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
     <color name="surface_light">#2C2C2C</color>
+    <color name="on_surface">#212121</color>
+    <color name="on_surface_variant">#757575</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="splash_background">#1E88E5</color>
+    <color name="elevation_overlay">#FFFFFF</color>
     
     <!-- Text Colors -->
-    <color name="text_primary">#FFFFFF</color>
-    <color name="text_secondary">#B3B3B3</color>
-    <color name="text_disabled">#666666</color>
-    <color name="text_hint">#808080</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_disabled">#BDBDBD</color>
+    <color name="text_hint">#9E9E9E</color>
+    
+    <!-- Icon Colors -->
+    <color name="icon_primary">#212121</color>
+    <color name="icon_secondary">#757575</color>
+    <color name="icon_disabled">#BDBDBD</color>
     
     <!-- Status Colors -->
     <color name="status_connected">#4CAF50</color>
     <color name="status_disconnected">#9E9E9E</color>
     <color name="status_connecting">#FFC107</color>
+    <color name="status_disconnecting">#FF9800</color>
     <color name="status_error">#F44336</color>
     
-    <!-- Connection Button Colors -->
+    <!-- Error Colors -->
+    <color name="error">#F44336</color>
+    <color name="error_dark">#D32F2F</color>
+    <color name="on_error">#FFFFFF</color>
+    
+    <!-- Button Colors -->
+    <color name="button_connect">#4CAF50</color>
     <color name="button_connect_start">#1E88E5</color>
     <color name="button_connect_end">#00BCD4</color>
+    <color name="button_disconnect">#F44336</color>
     <color name="button_disconnect_start">#F44336</color>
     <color name="button_disconnect_end">#E91E63</color>
+    <color name="button_connecting">#FFC107</color>
     <color name="button_connecting_start">#FFC107</color>
     <color name="button_connecting_end">#FF9800</color>
+    <color name="button_disabled">#BDBDBD</color>
+    
+    <!-- System Bar Colors -->
+    <color name="status_bar">#1565C0</color>
+    <color name="navigation_bar">#FAFAFA</color>
+    <color name="toolbar_background">#1E88E5</color>
     
     <!-- Latency Colors -->
     <color name="latency_excellent">#4CAF50</color>
     <color name="latency_good">#8BC34A</color>
+    <color name="latency_fair">#FFC107</color>
     <color name="latency_medium">#FFC107</color>
+    <color name="latency_slow">#FF9800</color>
     <color name="latency_poor">#FF9800</color>
     <color name="latency_bad">#F44336</color>
+    <color name="latency_unknown">#9E9E9E</color>
     
     <!-- Protocol Badge Colors -->
     <color name="protocol_vmess">#9C27B0</color>
@@ -45,46 +81,59 @@
     <color name="protocol_trojan">#3F51B5</color>
     <color name="protocol_shadowsocks">#2196F3</color>
     <color name="protocol_ssh">#00BCD4</color>
+    <color name="protocol_udp">#009688</color>
     
     <!-- Traffic Stats Colors -->
     <color name="traffic_download">#4CAF50</color>
     <color name="traffic_upload">#2196F3</color>
+    <color name="download_color">#4CAF50</color>
+    <color name="upload_color">#2196F3</color>
+    
+    <!-- Component Colors -->
+    <color name="chip_background">#E3F2FD</color>
+    <color name="chip_stroke">#BBDEFB</color>
+    <color name="chip_text">#1E88E5</color>
+    <color name="text_input_stroke">#BDBDBD</color>
+    <color name="switch_thumb">#FAFAFA</color>
+    <color name="switch_track">#BDBDBD</color>
     
     <!-- Divider and Border -->
-    <color name="divider">#333333</color>
-    <color name="border">#404040</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="border">#BDBDBD</color>
     
     <!-- Ripple and Overlay -->
     <color name="ripple_light">#33FFFFFF</color>
     <color name="ripple_dark">#33000000</color>
+    <color name="ripple_primary">#401E88E5</color>
     <color name="overlay_dark">#80000000</color>
     
     <!-- Drawer Colors -->
-    <color name="drawer_background">#1A1A1A</color>
+    <color name="drawer_background">#FFFFFF</color>
     <color name="drawer_item_selected">#1E88E5</color>
-    <color name="drawer_item_text">#FFFFFF</color>
-    <color name="drawer_item_icon">#B3B3B3</color>
+    <color name="drawer_item_text">#212121</color>
+    <color name="drawer_item_icon">#757575</color>
     
     <!-- Dialog Colors -->
-    <color name="dialog_background">#2C2C2C</color>
-    <color name="dialog_title">#FFFFFF</color>
+    <color name="dialog_background">#FFFFFF</color>
+    <color name="dialog_title">#212121</color>
     
     <!-- Input Colors -->
-    <color name="input_background">#1E1E1E</color>
-    <color name="input_stroke">#404040</color>
+    <color name="input_background">#FAFAFA</color>
+    <color name="input_stroke">#BDBDBD</color>
     <color name="input_stroke_focused">#1E88E5</color>
-    
-    <!-- Chip/Badge Colors -->
-    <color name="chip_background">#333333</color>
-    <color name="chip_text">#FFFFFF</color>
     
     <!-- Warning and Info -->
     <color name="warning">#FF9800</color>
     <color name="info">#2196F3</color>
     <color name="success">#4CAF50</color>
-    <color name="error">#F44336</color>
     
-    <!-- White and Black -->
+    <!-- Notification Colors -->
+    <color name="notification_connected">#4CAF50</color>
+    <color name="notification_connecting">#FFC107</color>
+    <color name="notification_disconnected">#9E9E9E</color>
+    <color name="notification_error">#F44336</color>
+    
+    <!-- Basic Colors -->
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
